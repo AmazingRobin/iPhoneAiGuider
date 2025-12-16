@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>强行开启国行 iPhone 满血 AI 教程</title>
+    <meta name="description" content="国行 iPhone 开启 Apple Intelligence 完整教程，包含风险提示与详细步骤。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>强行开启国行 iPhone 满血 AI</h1>
+            <p class="subtitle">解锁 Apple Intelligence 的终极指南</p>
+            <div class="alert alert-danger">
+                <strong>⚠️ 高风险警告</strong>
+                <p>此操作涉及修改系统底层文件，极高概率导致设备<strong>无限重启（白苹果）</strong>、<strong>数据丢失</strong>或<strong>变砖</strong>。请务必在操作前完整备份数据！后果自负。</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="prerequisites">
+                <h2>🛠️ 准备工作</h2>
+                <ul class="checklist">
+                    <li><span class="icon">📱</span> <strong>设备要求：</strong> iPhone 15 Pro / Pro Max 或更新机型（支持 AI 的设备）</li>
+                    <li><span class="icon">mw_mobile</span> <strong>系统版本：</strong> iOS 18.0 - iOS 18.1 (部分教程支持至 18.2 Beta)</li>
+                    <li><span class="icon">💻</span> <strong>电脑：</strong> Windows 或 Mac</li>
+                    <li><span class="icon">💾</span> <strong>数据备份：</strong> 必须进行 iTunes/Finder 完整备份</li>
+                    <li><span class="icon">🆔</span> <strong>Apple ID：</strong> 准备一个美区 Apple ID</li>
+                    <li><span class="icon">🔍</span> <strong>关闭查找：</strong> 操作期间需关闭“查找我的 iPhone”</li>
+                </ul>
+            </section>
+
+            <section class="steps">
+                <h2>🚀 操作步骤</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>下载并安装工具</h3>
+                        <p>在电脑上下载 <strong>MisakaX</strong> 或 <strong>Nugget</strong> 工具。这些工具利用系统漏洞修改配置。</p>
+                        <p class="note">注：工具通常在 GitHub 或相关技术社区发布，请确保下载最新版本。</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>获取 MobileGestalt 文件</h3>
+                        <p>1. 手机连接电脑，信任设备。</p>
+                        <p>2. 运行特定的<strong>快捷指令</strong>（通常工具包中会提供）来生成 <code>com.apple.MobileGestalt.plist</code> 文件。</p>
+                        <p>3. 将该文件导出到电脑桌面。</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>修改区域标识</h3>
+                        <p>1. 使用 plist 编辑器打开导出的文件。</p>
+                        <p>2. 搜索 <code>CH/A</code> (国行标识)。</p>
+                        <p>3. 将其修改为 <code>LL/A</code> (美版标识)。</p>
+                        <p>4. 保存文件。</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>应用修改并重启</h3>
+                        <p>1. 打开 MisakaX / Nugget 工具。</p>
+                        <p>2. 导入修改后的 plist 文件。</p>
+                        <p>3. 选择开启 <strong>Apple Intelligence</strong> 选项。</p>
+                        <p>4. 点击应用 (Apply)，手机将自动重启。</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>激活与设置</h3>
+                        <p>1. 重启后，检查“设置 > 通用 > 关于本机”，型号号码应显示为 LL/A。</p>
+                        <p>2. 将系统语言设置为 <strong>English (US)</strong>，地区设置为 <strong>United States</strong>。</p>
+                        <p>3. 登录美区 Apple ID。</p>
+                        <p>4. 在设置中找到 Apple Intelligence 并加入候补名单 (Waitlist)，通常几分钟后即可通过。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h2>❓ 常见问题</h2>
+                <div class="faq-item">
+                    <h3>Q: 开启后能用 ChatGPT 吗？</h3>
+                    <p>A: 即使开启了 AI，由于网络限制，集成的 ChatGPT 功能在中国大陆网络环境下可能无法直接使用，需要科学的网络环境。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 会影响保修吗？</h3>
+                    <p>A: 修改系统文件理论上会影响保修。如果在去售后前能恢复原状，可能不受影响，但风险自担。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 失败了怎么办？</h3>
+                    <p>A: 如果遇到白苹果或无限重启，请进入 DFU 模式连接电脑，使用 iTunes/Finder 刷机恢复系统（数据将丢失，除非有备份）。</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>免责声明：本教程仅供技术研究与交流，请勿用于非法用途。操作风险由用户自行承担。</p>
+            <p>&copy; 2025 iPhone AI Guide</p>
+        </footer>
+    </div>
+</body>
+</html>
