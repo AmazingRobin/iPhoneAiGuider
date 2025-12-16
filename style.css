@@ -53,17 +53,16 @@ body {
 }
 
 .alert {
-    background: rgba(255, 69, 58, 0.1);
-    border: 1px solid var(--danger-color);
+    background: rgba(30, 209, 88, 0.1);
+    border: 1px solid var(--success-color);
     border-radius: 12px;
     padding: 1rem;
-    text-align: left;
-    color: var(--danger-color);
+    text-align: center;
+    color: var(--success-color);
 }
 
 .alert strong {
     display: block;
-    margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
@@ -93,13 +92,32 @@ h2 {
     padding: 1rem;
     border-radius: 12px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Align icon to top */
     border: 1px solid var(--border-color);
 }
 
 .checklist .icon {
     font-size: 1.5rem;
     margin-right: 1rem;
+    margin-top: 0.2rem;
+    /* Slight adjustment for alignment */
+}
+
+.checklist .list-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist .list-content strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.checklist .list-content span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
 }
 
 /* Steps */
@@ -116,7 +134,7 @@ h2 {
 
 .step-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     border-color: var(--accent-color);
 }
 
@@ -136,6 +154,15 @@ h2 {
 .step-content p {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
+}
+
+.step-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    display: block;
 }
 
 .note {
@@ -171,13 +198,25 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Mobile Responsive */
@@ -185,12 +224,12 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .step-card {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .step-number {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
