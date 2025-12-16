@@ -71,60 +71,95 @@
 
             <section class="steps">
                 <h2>🚀 操作步骤</h2>
-                
+
                 <div class="step-card">
                     <div class="step-number">01</div>
                     <div class="step-content">
-                        <h3>下载并安装工具</h3>
-                        <p>在电脑上下载 <strong>MisakaX</strong> 或 <strong>Nugget</strong> 工具。这些工具利用系统漏洞修改配置。</p>
-                        <p class="note">注：工具通常在 GitHub 或相关技术社区发布，请确保下载最新版本。</p>
-                        <img src="images/misakax_ui.png" alt="MisakaX Interface" class="step-image">
+                        <h3>简单设置</h3>
+                        <p>手机设置里，查找手机关闭</p>
+                        <p>语言与地区 改美国并且关闭定位</p>
+                        <p>手机语言设置为英语</p>
                     </div>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">02</div>
                     <div class="step-content">
-                        <h3>获取 MobileGestalt 文件</h3>
-                        <p>1. 手机连接电脑，信任设备。</p>
-                        <p>2. 运行特定的<strong>快捷指令</strong>（通常工具包中会提供）来生成 <code>com.apple.MobileGestalt.plist</code> 文件。</p>
-                        <p>3. 将该文件导出到电脑桌面。</p>
+                        <h3>下载快捷指令</h3>
+                        <p>打开网址: <a href="https://icloud.com/shortcuts/0002e5bd9b7842bda3c2a83ad82033c9" target="_blank">点击打开</a></p>
+                        <p>下载快捷指令，下载完毕之后点击快捷指令，点击里面的文件</p>
+                        <p>点击NSS开头的文件，然后全选，复制粘贴到电脑上</p>
                     </div>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">03</div>
                     <div class="step-content">
-                        <h3>修改区域标识</h3>
-                        <p>1. 使用 plist 编辑器打开导出的文件。</p>
-                        <p>2. 搜索 <code>CH/A</code> (国行标识)。</p>
-                        <p>3. 将其修改为 <code>LL/A</code> (美版标识)。</p>
-                        <p>4. 保存文件。</p>
+                        <h3>修改配置文件</h3>
+                        <p>1. 在电脑上新建一个 TXT 文本文件，粘贴刚刚复制的 NSS 文件内容。</p>
+                        <p>2. 修改内容 (两处)：</p>
+                        <p class="note">将 &lt;string&gt;CH&lt;/string&gt; 中的 CH 改为 LL (有两处，都要改)</p>
+                        <p class="note">将 &lt;string&gt;LL/A&lt;/string&gt; 中的 LL 改为 CH</p>
+                        <p>3. 保存并将文件重命名为：<code>com.apple.MobileGestalt.plist</code></p>
                     </div>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">04</div>
                     <div class="step-content">
-                        <h3>应用修改并重启</h3>
-                        <p>1. 打开 MisakaX / Nugget 工具。</p>
-                        <p>2. 导入修改后的 plist 文件。</p>
-                        <p>3. 选择开启 <strong>Apple Intelligence</strong> 选项。</p>
-                        <p>4. 点击应用 (Apply)，手机将自动重启。</p>
+                        <h3>使用 Misaka 修改</h3>
+                        <p>1. 下载 Misaka 软件：<a href="https://pan.baidu.com/s/1tIr6GtVjC1veXKBDQ0bbqw?pwd=a1jc" target="_blank">百度网盘 (码: a1jc)</a> 或 <a href="https://github.com/straight-tamago/misaka26/releases" target="_blank">GitHub</a></p>
+                        <p>2. 电脑打开 Misaka，导入 <code>com.apple.MobileGestalt.plist</code>。</p>
+                        <p>3. <strong>只勾选 Apple Intelligence</strong>，其他留空。</p>
+                        <img src="images/misakax_ui.png" alt="Misaka Interface" class="step-image">
                     </div>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">05</div>
                     <div class="step-content">
-                        <h3>激活与设置</h3>
-                        <p>1. 重启后，检查“设置 > 通用 > 关于本机”，型号号码应显示为 LL/A。</p>
-                        <p>2. 将系统语言设置为 <strong>English (US)</strong>，地区设置为 <strong>United States</strong>。</p>
-                        <p>3. 登录美区 Apple ID。</p>
-                        <p>4. 在设置中找到 Apple Intelligence 并加入候补名单 (Waitlist)，通常几分钟后即可通过。</p>
-                        <img src="images/apple_intelligence_settings.png" alt="Apple Intelligence Settings" class="step-image">
+                        <h3>卡书应用 (关键步骤)</h3>
+                        <p>1. 连接手机，信任电脑。</p>
+                        <p>2. 卸载手机自带“图书”App，确保登录美区 ID，去 App Store 重新下载“Books”。</p>
+                        <p>3. 开启代理软件 (如小火箭)，全局挂美国节点。</p>
+                        <p>4. 打开 Books 搜索 "free"，点击获取免费书。</p>
+                        <p>5. <strong>关键：</strong>在 Books 下载转圈的过程中，立即点击电脑 Misaka 上的 <strong>Apply</strong> 按钮！</p>
+                        <p>6. 手机会自动重启。</p>
                     </div>
                 </div>
+
+                <div class="step-card">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>检查功能</h3>
+                        <p>重启后进入设置，查看是否有 <strong>Apple Intelligence & Siri</strong>。</p>
+                        <p>如果有，点击进入。确保系统语言和 Siri 语言都设置为 <strong>English (US)</strong>。</p>
+                        <p>切记不要选中文，否则无法使用。</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">07</div>
+                    <div class="step-content">
+                        <h3>下载与激活</h3>
+                        <p>进入 Apple Intelligence 页面，点击加入/开启。</p>
+                        <p>系统会自动下载组件 (约 5-10 分钟)。</p>
+                        <p>看到完整 AI 面板即代表成功！</p>
+                        <img src="images/apple_intelligence_settings.png" alt="AI Settings" class="step-image">
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">08</div>
+                    <div class="step-content">
+                        <h3>体验 AI</h3>
+                        <p>短按侧边键即可呼出新版 Siri。</p>
+                        <p>体验 Rewrite, Image Playground, Genmoji 等功能。</p>
+                        <p>恭喜完成！🎉</p>
+                    </div>
+                </div>
+
+                
             </section>
 
             <section class="faq">
