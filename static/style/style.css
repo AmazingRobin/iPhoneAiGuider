@@ -183,9 +183,14 @@ h2 {
     text-align: center;
 }
 
-.video video {
+.video video,
+.video iframe {
     width: 100%;
     max-width: 100%;
+    aspect-ratio: 16/9;
+    /* Maintain aspect ratio for iframe */
+    height: auto;
+    /* Allow height to adjust based on width */
     border-radius: 16px;
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
